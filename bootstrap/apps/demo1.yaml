@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo1
+  name: app-demo1
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: argo-demo1
+    namespace: demo1
     server: https://kubernetes.default.svc
   project: default
   source:
