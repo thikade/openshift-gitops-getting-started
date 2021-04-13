@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: demo1
+  name: app-demo2
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: argo-demo1
+    namespace: demo2
     server: https://kubernetes.default.svc
   project: default
   source:
     directory:
       recurse: true
-    path: myApps/demo1
+    path: myApps/demo2
     repoURL: https://github.com/thikade/openshift-gitops-getting-started.git
     targetRevision: demo1
   syncPolicy:
