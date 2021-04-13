@@ -13,7 +13,7 @@ spec:
       recurse: false
     path: bootstrap/apps
     repoURL: https://github.com/thikade/openshift-gitops-getting-started.git
-    targetRevision: main
+    targetRevision: demo1
   syncPolicy:
     automated:
       prune: true
